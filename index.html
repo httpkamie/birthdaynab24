@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yang Cantik Je Nampak Ni</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            background-color: #e6e6fa;
+            color: #4b0082;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .button {
+            width: 150px;
+            padding: 0.5em;
+            background-color: #4b0082;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 2em;
+        }
+        .button:hover {
+            background-color: #9932cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Nabila's Birthday Page</h1>
+    <button class="button" onclick="goToWishPage()">See Your Wish</button>
+
+    <script>
+        function goToWishPage() {
+            window.location.href = 'wish.html';
+        }
+    </script>
+</body>
+</html>

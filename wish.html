@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            background-color: #f3e5f5;
+            color: #4b0082;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #800080;
+            color: white;
+            padding: 2em;
+            font-size: 2.5em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .content {
+            margin: 2em;
+            padding: 2em;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        .video {
+            margin: 2em auto;
+            width: 100%;
+            max-width: 480px; /* Adjust as needed */
+        }
+        .button {
+            width: 150px;
+            padding: 0.5em;
+            background-color: #4b0082;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 2em;
+        }
+        .button:hover {
+            background-color: #9932cc;
+        }
+        p {
+            margin: 1em 0;
+            line-height: 1.6;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ff69b4;
+            transform: rotate(-45deg);
+            animation: float 6s infinite ease-in-out;
+        }
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -25px;
+            left: 0;
+        }
+        .heart::after {
+            left: 25px;
+            top: 0;
+        }
+        @keyframes float {
+            0% {
+                bottom: -100px;
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Happy Birthday, Nabila!
+</header>
+
+<div class="content">
+    <p>Hi Nabila, semoga tak juling baca wish ni HAHAHHAHA. </p>
+
+<p> Selamat ulang tahun yang ke 22 haha, saya tahu lambat benor la saya wishnya maapler baru ada hidayah nk tutup sims and hadap notepad ni ha, pertama sekali, tahniahhh, dah besar dah member aku ni, dari dia 19 sekarang dah 22, pejam celik pejam celik dah 3 tahun dah kita kenal each other. Takdelah emosi mana pun ucapan ni tapi firstly saya nak terima kasih kat awak sebab dah jadi kawan saya selama ni, dari first aku tegur kau sebab pubgm sampai la ni main roblox bodo2 sama sama. You have teached me alot of things, i know its hard but kau dah banyak ajar aku especially in terms of friendship, i know i may not be a good friend to you before but im still trying my best to better than i was before. </p>
+
+
+<p> Without you, aku rasa aku masih tak sedar what i do is actually wrong and i might hurt people because of it, tapi tak bermakna kau layak rasa macam tu and im sorry, not gonna lie sampai sekarang ni aku masih ada rasa bersalah tu and sampai sekarang aku tbh takut nk berkawan cause i was never good at making friends but nvm today bukan pasal aku , harini hari kau huhu meh aku cerita 1001 benda yang kau tak sedar tentang diri kau.</p> 
+
+<p> Maybe kau sedar je semua ni tapi kau cantik doe nab, seriously you are and dont let anyone stop believing that you are not and because of that i always hope that kau akan dapat orang yang bebetul layak and hargai kau. I know how much you crave for love and YOU DESERVE TO BE LOVED, although kita dua boleh relate not getting enough attention from our parents but because of that aku jugak tahu yang kau patut disayangi dengan orang yang bebetul menghargai kau and bukan semata mata nk gunakan kau utk kesenangan dia sendiri. </p> 
+
+<p> Kau baik nab, and i hope orang tak ambik kesempatan atas kau sebab kebaikan kau tu. Aku masih bestfriend kau kan? ahahaha kadang tu aku takut aku yang melebih tapi kau dh tak selesa dengan aku tapi if aku tetap bestfriend kau, sesungguhnya aku harap kita kawan sampai mati, i want my kids to know you and tell them how annoying you are and how you were there even when i was at my lowest and maybe soon at my highest haha and aku pun nak bersama dengan kau dalam jatuh bangun kau so jangan putus asa tau dalam kehidupan, walau macam mana sekali pun i will try my best to be there for you. </p> 
+
+<p> kau dh dalam pelbagai fasa hidup aku nab, dari dip sekarang lagi satu sem je kita dua dh nk habis degree, aku nak borak panjang lagi tapi nanti birthday tahun akan datang aku nk borak apa? HAHAH kan 1001 so harini kita tolak 2, so adalah baki 999 benda (apa aku merepek ni) but either aku mintak maaf if ada terkasar bahasa sepanjang tulis wish ni, aku tahu kau bukan jenis cepat nangis lagi2 kalau bab aku en HAHAHAH love you nabbb tengoklah bideo tu muah, see you soon!</p>
+    <div class="video">
+        <video width="100%" controls>
+            <source src="birthdaynab.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <p>Lets create more memories together :)</p>
+    <button class="button" onclick="playVideo()">Play Video</button>
+</div>
+
+<script>
+    function playVideo() {
+        let video = document.querySelector('video');
+        video.play();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        for (let i = 0; i < 20; i++) {
+            let heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.style.left = `${Math.random() * 100}%`;
+            heart.style.animationDelay = `${Math.random() * 5}s`;
+            document.body.appendChild(heart);
+        }
+    });
+</script>
+
+</body>
+</html>
